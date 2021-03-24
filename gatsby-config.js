@@ -2,5 +2,5 @@ module.exports = {
   siteMetadata: {
     title: "Ocit Website",
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-react-helmet`],
 };

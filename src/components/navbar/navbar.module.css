@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    padding: 8px;
+    margin-left: 4px;
+    /* flex: 1; */
+}
+
+.logo {
+    height: 70px;
+}
+
+.titleContainer {
+    padding: 8px;
+    flex: auto;
+    text-align: center;
+}
+
+.title {
+    color: whitesmoke;
+}
+
+.buttonContainer {
+    display: flex;
+    /* flex: 1; */
+}
+
+.navbarButton {
+    margin-right: 16px;
+    font-weight: 400;
+}
+
+.redLetter {
+    color: #E30F38;
+}
+

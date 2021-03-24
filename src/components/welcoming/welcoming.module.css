@@ -1,0 +1,71 @@
+.container {
+  margin-top: 24px;
+  margin-left: 16px;
+  display: flex;
+}
+
+.bandImg {
+  transition: transform 500ms;
+}
+
+.bandImg:hover {
+  transform: rotate(30deg) scale(1.2, 1.2);
+}
+
+.imgContainer {
+  flex: 2;
+  text-align: center;
+  /* height: 500px; */
+  overflow: visible;
+  overflow-wrap: break-word;
+}
+.blogsContainer {
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 24px;
+  padding-top: 36px;
+  flex: 3;
+}
+.sloganContainer {
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 36px;
+}
+.typewriter h1 {
+  width: 0;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 4s steps(40, end) forwards, blink-caret 1s step-end infinite;
+}
+
+
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #e30f38;
+  }
+}
