@@ -4,7 +4,6 @@ import bandImg from "../../images/bands.png";
 import BlogCard from "../blog-card/blog-card";
 
 export default function Welcoming() {
-  const [imgLoaded, setImgLoaded] = useState(false);
   const [blogData, setBlogData] = useState([]);
 
   async function getBlogContent() {
@@ -13,7 +12,6 @@ export default function Welcoming() {
     );
     const data = await response.json();
     setBlogData(data.items);
-    console.log(data.items);
   }
 
   useEffect(() => {
@@ -23,13 +21,9 @@ export default function Welcoming() {
   return (
     <div
       className={styles.container}
-      style={{ display: imgLoaded ? "flex" : "none" }}
     >
       <div className={styles.imgContainer}>
         <img
-          onLoad={() => {
-            setImgLoaded(true);
-          }}
           className={styles.bandImg}
           src={bandImg}
           alt="banding"

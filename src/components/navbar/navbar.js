@@ -3,22 +3,10 @@ import * as styles from "./navbar.module.css";
 import logo from "../../images/ocit_logo.png";
 
 export default function NavBar() {
-  const [loaded, setLoaded] = useState(false);
-
   return (
-    <div
-      className={styles.navbar}
-      style={{ display: loaded ? "flex" : "hidden" }}
-    >
+    <div className={styles.navbar}>
       <div className={styles.logoContainer}>
-        <img
-          onLoad={() => {
-            setLoaded(true);
-          }}
-          className={styles.logo}
-          src={logo}
-          alt="OCİT logo"
-        />
+        <img className={styles.logo} src={logo} alt="OCİT logo" />
       </div>
       <div className={styles.titleContainer}>
         <h1 className={styles.title}>
