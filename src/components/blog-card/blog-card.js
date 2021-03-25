@@ -3,9 +3,9 @@ import * as styles from "./blog-card.module.css";
 
 export default function BlogCard({ data }) {
   function renderDescription(str) {
-    let description = str.match(/<p>(.*?)<\/p>/)[1];
-    if (description.length > 50) {
-      return str.substring(0, 50) + "...";
+    let description = str.match(/<p>(?<desc>.*?)<\/p>/).groups.desc;
+    if (description.length > 60) {
+      return description.substring(0, 50) + "...";
     }
     return description;
   }

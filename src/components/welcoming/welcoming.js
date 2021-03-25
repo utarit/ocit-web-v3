@@ -42,7 +42,7 @@ export default function Welcoming() {
           </div>
         </div>
         <div className={styles.blogsContainer}>
-        <h2>Bizden son haberler</h2>
+          <h2>Bizden son haberler</h2>
           {blogData.map((el) => (
             <BlogCard key={el.guid} data={el} />
           ))}

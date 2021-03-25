@@ -1,22 +1,29 @@
-/* html {
-    overflow: scroll;
-    overflow-x: hidden;
-} */
-
+html,
 body {
-    background-color: #1F1E1D;
+  width: 100%;
+  margin: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-    color: white;
-    font-family: 'Lexend', sans-serif;
+body {
+  background-color: #1f1e1d;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  font-family: "Lexend", sans-serif;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #E30F38;
+  color: #e30f38;
 }

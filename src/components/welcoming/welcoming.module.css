@@ -14,10 +14,7 @@
 
 .imgContainer {
   flex: 2;
-  text-align: center;
-  /* height: 500px; */
   overflow: visible;
-  overflow-wrap: break-word;
 }
 .blogsContainer {
 }
@@ -68,4 +65,35 @@
   50% {
     border-color: #e30f38;
   }
+}
+
+
+@media screen and (max-width: 480px){
+    .container {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .contentContainer {
+        margin-left: 0px;
+        margin: 8px;
+        align-items: stretch;
+    }
+
+    .imgContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bandImg {
+        width: 90%;
+    }
+
+    .typewriter h1 {
+        font-size: 5vw;
+        margin-top: 16px;
+        width: 100%;
+    }
+
 }

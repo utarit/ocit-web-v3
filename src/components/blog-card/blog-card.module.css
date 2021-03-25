@@ -1,14 +1,14 @@
 .container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   background-color: #eee5e9;
   margin-bottom: 16px;
   padding: 8px 16px;
   border-radius: 10px;
-  width: fit-content;
   transition: transform 200ms;
 }
+
 
 .container:hover {
     transform: scale(1.05, 1.05);
@@ -46,4 +46,28 @@
 .infoContainer {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 480px){
+
+    .blogContent {
+        font-size: small;
+        margin: 0 4px;
+    }
+
+    .container {
+        padding: 8px 8px;
+        flex-direction: column;
+    }
+
+    .thumbnail {
+        width: 175px;
+    }
+
+    .contentContainer{
+        align-items: center;
+        margin: 0;
+    }
+
+
 }
